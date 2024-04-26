@@ -27,7 +27,7 @@ export default function Home() {
         isLoadingProducts ? (
           <Loader />
         ) : (
-          <ul className=' w-full min-h-screen p-8 text-foreground flex gap-4 flex-wrap'>
+          <ul className=' w-full min-h-screen p-4 text-foreground flex gap-4 flex-wrap'>
             {products.map((product, index) => <li key={index}>
               <ProductsCard key={product.title} product={product} />
             </li>)}

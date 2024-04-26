@@ -14,7 +14,7 @@ export default function SignoutButton() {
   }, [signedout]);
 
   return (
-    <Button variant="ghost" className=' text-2xl flex justify-center items-center gap-2 py-6' onClick={signout}>
+    <Button variant="ghost" className=' w-full text-2xl flex justify-start items-center gap-2 py-6' onClick={signout}>
       {
         signingout ? (
           <div className='flex gap-1 justify-center items-center'>
