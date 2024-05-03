@@ -1,6 +1,7 @@
 import AddProduct from "./AddProduct";
 import Customers from "./Customers";
 import Home from "./Home";
+import NotFound from "./NotFound";
 import Orders from "./Orders";
 import Product from "./Product";
 import ProductsDetail from "./ProductsDetail";
@@ -16,4 +17,5 @@ export {
     Customers,
     AddProduct,
     ProductsDetail,
+    NotFound,
 }

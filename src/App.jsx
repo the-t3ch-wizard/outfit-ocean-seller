@@ -1,6 +1,6 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import { AddProduct, Customers, Home, Orders, Product, ProductsDetail, Signin, Signup } from './pages'
+import { AddProduct, Customers, Home, NotFound, Orders, Product, ProductsDetail, Signin, Signup } from './pages'
 import { AuthLayout, RootLayout } from './components/elements'
 import { Toaster } from "@/components/ui/toaster"
 
@@ -30,8 +30,10 @@ export default function App() {
           <Route path='/update-post/:id' element={<UpdatePost />} />
           <Route path='/post/:id' element={<Post />} />
           <Route path='/profile/:id' element={<Profile />} />
-          <Route path='/update-profile/:id' element={<UpdateProfile />} /> */}
+        <Route path='/update-profile/:id' element={<UpdateProfile />} /> */}
         </Route>
+
+        <Route path='/*' element={<NotFound />} />
 
       </Routes>
 
