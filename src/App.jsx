@@ -19,9 +19,10 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path='/product' element={<Product />} />
           <Route path='/product/:id' element={<ProductsDetail />} />
-          {/* <Route path='/order' element={<Orders />} /> */}
-          {/* <Route path='/customer' element={<Customers />} /> */}
           <Route path='/add-product' element={<AddProduct />} />
+          <Route path='/order' element={<Orders />} />
+          
+          {/* <Route path='/customer' element={<Customers />} /> */}
           {/* <Route path='/explore' element={<Explore />} />
           <Route path='/people' element={<People />} />
           <Route path='/saved' element={<Saved />} />

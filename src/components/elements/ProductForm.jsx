@@ -137,7 +137,7 @@ export default function ProductForm({ className }) {
           {
             isAddingProduct ? (
               <div className=' flex gap-1 justify-center items-center'>
-                <Loader />
+                <Loader className={` fill-background`} />
                 Adding
               </div>
             ) : (
