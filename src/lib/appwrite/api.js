@@ -153,7 +153,7 @@ export async function saveProductImage(file){
 export async function getRecentSellerProducts(payload){
   try {
     
-    if (payload && payload.sellerId && payload.sellerId!=='') throw Error;
+    if (payload && payload.sellerId && payload.sellerId==='') throw Error;
     const products = await databases.listDocuments(
       appwriteConfig.databaseId,
       appwriteConfig.productCollectionId,
