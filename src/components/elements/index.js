@@ -4,6 +4,7 @@ import Description from "./Description"
 import LeftNavBar from "./LeftNavBar"
 import Loader from "./Loader"
 import Logo from "./Logo"
+import NotFound from "./NotFound"
 import ProductForm from "./ProductForm"
 import ProductsCard from "./ProductsCard"
 import QuantityButton from "./QuantityButton"
@@ -24,4 +25,5 @@ export {
   SignoutButton,
   ProductsCard,
   QuantityButton,
+  NotFound,
 }

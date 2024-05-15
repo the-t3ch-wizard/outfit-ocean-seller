@@ -1,4 +1,4 @@
-import { Loader, ProductsCard } from '@/components/elements';
+import { Loader, NotFound, ProductsCard } from '@/components/elements';
 import { useUserContext } from '@/context/AuthContext';
 import { useGetRecentSellerProducts } from '@/lib/react-query/queriesAndMutations'
 import { productsAtom } from '@/store/atoms/atoms';
@@ -28,9 +28,13 @@ export default function Product() {
           <Loader />
         ) : (
           <ul className=' w-full min-h-screen p-4 text-foreground flex gap-4 flex-wrap'>
-            {products.map((product, index) => <li key={index}>
-              <ProductsCard key={product.title} product={product} />
-            </li>)}
+            {
+              products.length===0 ?
+              <NotFound /> : 
+              products.map((product, index) => <li key={index}>
+                <ProductsCard key={product.title} product={product} />
+              </li>)
+            }
           </ul>
         )
       }
