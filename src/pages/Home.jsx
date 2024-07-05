@@ -6,6 +6,7 @@ import React, { useEffect, useState } from 'react'
 import { useRecoilState } from 'recoil';
 
 export default function Home() {
+  
   const { mutateAsync: getRecentSellerProducts, isPending: isLoadingProducts } = useGetRecentSellerProducts();
 
   const { user, isLoading } = useUserContext();
